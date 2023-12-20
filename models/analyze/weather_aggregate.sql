@@ -10,5 +10,5 @@ SELECT
     min(humidity) AS min_humidity, 
     avg(wind_speed) AS avg_wind_speed
 FROM {{ref('weather_data')}}
-GROUP BY EXTRACTED_AT;
+GROUP BY extracted_at
 

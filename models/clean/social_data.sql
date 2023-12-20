@@ -8,4 +8,4 @@ SELECT
     rating AS rating_value,
     rating_date AS rated_at
 FROM {{source('raw_data','ratings')}}
-WHERE rating is not null ;
+WHERE rating is not null 

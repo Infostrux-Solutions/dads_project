@@ -4,7 +4,7 @@
     alias = 'stocks_data'
 ) }}
 SELECT 
-    open AS value_at_opening,
-    close AS value_at_closing, 
+    "1. OPEN" AS value_at_opening,
+    "4. CLOSE" AS value_at_closing, 
     _airbyte_extracted_at AS extracted_at
-FROM {{source('raw_data','alphavantage')}} ;
+FROM {{source('raw_data','time_series_daily')}} 

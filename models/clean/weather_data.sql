@@ -4,10 +4,10 @@
     alias = 'weather_data'
 ) }}
 SELECT 
-    "CURRENT":cloudcover AS cloudcover,
-    "CURRENT":temperature,
-    "CURRENT":humidity AS humidity, 
-    "CURRENT":wind_speed AS wind_speed, 
+    "CURRENT":cloudcover::string AS cloudcover,
+    "CURRENT":temperature::int AS temperature,
+    "CURRENT":humidity::int AS humidity, 
+    "CURRENT":wind_speed::int AS wind_speed, 
     _airbyte_extracted_at AS extracted_at
-FROM {{source('raw_data','current_weather')}};
+FROM {{source('raw_data','current_weather')}}
 

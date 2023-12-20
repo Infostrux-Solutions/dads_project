@@ -7,5 +7,5 @@ sources:
     tables:
       - name: ratings
         identifier: ratings
-      - name: alphavantage
+      - name: time_series_daily
       - name: current_weather
