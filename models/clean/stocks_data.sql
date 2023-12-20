@@ -7,4 +7,4 @@ SELECT
     open AS value_at_opening,
     close AS value_at_closing, 
     _airbyte_extracted_at AS extracted_at
-FROM {{source('stocks','time_series_daily')}} ;
+FROM {{source('raw_data','alphavantage')}} ;

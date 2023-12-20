@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: raw_data
+    database: dev_ingest  
+    schema: landing_zone 
+    tables:
+      - name: ratings
+        identifier: ratings
+      - name: alphavantage
+      - name: current_weather

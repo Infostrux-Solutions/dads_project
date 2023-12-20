@@ -8,7 +8,7 @@ SELECT
     min(cloudcover) AS max_cloud_cover ,
     max(temperature) AS min_temperature,
     min(humidity) AS min_humidity, 
-    avg(wind_speed) AS avg_wind_speed, 
+    avg(wind_speed) AS avg_wind_speed
 FROM {{ref('weather_data')}}
 GROUP BY EXTRACTED_AT;
 

@@ -9,5 +9,5 @@ SELECT
     "CURRENT":humidity AS humidity, 
     "CURRENT":wind_speed AS wind_speed, 
     _airbyte_extracted_at AS extracted_at
-FROM {{source('weather','current_weather')}};
+FROM {{source('raw_data','current_weather')}};
 

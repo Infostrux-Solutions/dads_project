@@ -5,6 +5,6 @@
 ) }}
 SELECT 
     rated_at,
-    avg(rating_value) as avg_rating,
+    avg(rating_value) as avg_rating
 FROM {{ref('social_data')}}
 GROUP BY rated_at ;
